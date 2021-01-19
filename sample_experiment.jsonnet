@@ -1,11 +1,11 @@
 {
     "dataset_reader": {
-        "lazy": false,
+        "lazy": true,
         "type": "cnndmail_dataset_reader",
         "lowercase_tokens": true,
     },
     "validation_dataset_reader": {
-        "lazy": false,
+        "lazy": true,
         "type": "cnndmail_dataset_reader",
         "lowercase_tokens": true,
     },

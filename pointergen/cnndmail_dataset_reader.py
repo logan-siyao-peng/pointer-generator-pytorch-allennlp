@@ -30,7 +30,7 @@ class CNNDmailDatasetReader(DatasetReader):
                  tokenizer: Tokenizer = None,
                  token_indexers: Dict[str, TokenIndexer] = None,
                  lowercase_tokens : bool = False,
-                 lazy: bool = False,
+                 lazy: bool = True,
                  max_to_read = np.inf) -> None:
         super().__init__(lazy)
         self.lowercase_tokens = lowercase_tokens
