@@ -1,3 +1,6 @@
+# This code is adapted from the following:
+# https://github.com/abisee/cnn-dailymail/blob/master/make_datafiles.py
+
 import hashlib
 import sys, os
 
