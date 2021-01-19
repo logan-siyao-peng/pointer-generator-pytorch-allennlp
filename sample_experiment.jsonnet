@@ -10,8 +10,8 @@
         "lowercase_tokens": true,
     },
     "datasets_for_vocab_creation": ["train"],
-    "train_data_path": "sample_datafile.jsonl",        // path to training jsonl file
-    "validation_data_path": "sample_datafile.jsonl",   // path to validation jsonl file
+    "train_data_path": "train.jsonl",        // path to training jsonl file
+    "validation_data_path": "val.jsonl",   // path to validation jsonl file
     "vocabulary": {
         "extend": true,
         "directory_path": "bootstrapped_vocabulary",
