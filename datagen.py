@@ -2,7 +2,7 @@
 # https://github.com/abisee/cnn-dailymail/blob/master/make_datafiles.py
 
 import hashlib
-import sys, os
+import sys, os, json
 
 dm_single_close_quote = u'\u2019' # unicode
 dm_double_close_quote = u'\u201d'
@@ -103,7 +103,8 @@ def write_to_jsonl(url_file, out_file):
 			# Get the strings to write to .bin file
 			article, abstract = get_art_abs(story_file)
 			tmp_jsonl = {"article_lines": article, "summary_lines": abstract}
-			writer.write(str(tmp_jsonl)+'\n')
+			tmp_jsonl = json.dumps(tmp_jsonl)
+			writer.write(tmp_jsonl +'\n')
 
 	print("Finished writing file %s\n" % out_file)
 
